@@ -1,0 +1,38 @@
+# import internal codecademy library
+import codecademylib3
+
+paintings = ["The Two Fridas", "My Dress Hangs There", "Tree of Hope", "Self Portrait With Monkeys"]
+dates = ["1939", "1933", "1946", "1940"]
+#paintings_with_dates = zip(paintings, dates)
+#updated_paintings = list(paintings_with_dates)
+
+paintings.append("The Broken Column")
+paintings.append("The Wounded Deer")
+paintings.append("Me and My Doll")
+dates.append("1944")
+dates.append("1946")
+dates.append("1937")
+
+paintings_with_dates = zip(paintings, dates)
+updated_paintings = list(paintings_with_dates)
+
+# Check length of the paintings list
+#print(len(updated_paintings))
+
+id_numbers = range(1,8)
+ids = list(id_numbers)
+
+paintings_with_ids = zip(updated_paintings, ids)
+main_paintings_list = list(paintings_with_ids)
+
+print(main_paintings_list)
+
+# CHALLENGE
+links = ["https://www.fridakahlo.org/the-two-fridas.jsp", "https://www.fridakahlo.org/my-dress-hangs-there.jsp", "https://www.fridakahlo.org/tree-of-hope.jsp", 
+"https://www.fridakahlo.org/self-portrait-with-monkey.jsp", "https://www.fridakahlo.org/the-broken-column.jsp", "https://www.fridakahlo.org/the-wounded-deer.jsp", 
+"https://www.fridakahlo.org/me-and-my-doll.jsp"]
+
+final_paintings_list = zip(main_paintings_list, links)
+kahlo_list = list(final_paintings_list)
+
+#print(kahlo_list)
